@@ -1,0 +1,20 @@
+#*
+PACKAGE_NAME:Package Name:text:com.example.service:Enter your package name
+NAME:Service Name:text:MyService:Enter your service name
+*#
+package ${PACKAGE_NAME};
+
+import android.app.Service;
+import android.content.Intent;
+import android.os.IBinder;
+
+public class ${NAME} extends Service {
+    public ${NAME}() {
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        // TODO: Return the communication channel to the service.
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
+}

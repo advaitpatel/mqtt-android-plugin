@@ -1,8 +1,9 @@
 <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>www.advaitpatel.com.mqttandroid</id>
+  <name>MQTT Android</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="support@yourcompany.com"
+          url="http://www.yourcompany.com">YourCompany</vendor>
 
   <description><![CDATA[
       Enter short description for your plugin here.<br>
@@ -23,6 +24,8 @@
   <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
   -->
+  <depends>com.intellij.modules.lang</depends>
+  <depends>org.intellij.groovy</depends>
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
@@ -30,6 +33,12 @@
 
   <actions>
     <!-- Add your actions here -->
+    <action class="com.advaitpatel.www.mqttandroidplugin.ProjectCreationAction"
+            id="com.advaitpatel.www.mqttandroidplugin.ProjectCreationAction"
+            text="MQTT Android Plugin"
+            description="MQTT Android Plugin">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+    </action>
   </actions>
 
 </idea-plugin>
