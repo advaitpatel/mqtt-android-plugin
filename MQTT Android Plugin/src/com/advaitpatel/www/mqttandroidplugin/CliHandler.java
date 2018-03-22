@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2015-2017. All information contained herein is subject to the terms and conditions
- * defined in file 'MACHFU_LICENSE.txt', which is part of this source code package.
- *
- */
-
 package com.advaitpatel.www.mqttandroidplugin;
 
 import org.apache.commons.cli.*;
